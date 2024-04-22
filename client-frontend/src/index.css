@@ -1,0 +1,321 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Section 1 */
+.hero-overlay {
+    background-color: var(--fallback-n, oklch(0.98 0 0 / 0.51));
+}
+
+.team-vs {
+    background-color: #0d0f13;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: -90px;
+    position: relative;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1); }
+    .team-vs .score {
+      position: absolute;
+      top: 50%;
+      left: 48%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 700;
+      z-index: 2;
+      letter-spacing: .2em; }
+      @media (max-width: 991.98px) {
+        .team-vs .score {
+          font-size: 2rem;
+          left: 50%; } }
+    .team-vs h3 {
+      font-size: 20px;
+      color: #fff;
+      font-weight: 900;
+      margin-bottom: 20px; }
+    .team-vs ul {
+      color: #fff; }
+    .team-vs .team-details {
+      position: relative;
+      z-index: 2; }
+      .team-vs .team-details img {
+        width: 90px; }
+    .team-vs .team-1, .team-vs .team-2 {
+      padding: 30px; }
+    .team-vs .team-2 {
+      position: relative; }
+      .team-vs .team-2:before {
+        position: absolute;
+        background: #f6d743;
+        background: #ee1e46;
+        content: "";
+        left: -12%;
+        right: 0;
+        top: 0;
+        width: 200%;
+        height: 200%;
+        -webkit-transform: skew(-15deg);
+        -ms-transform: skew(-15deg);
+        transform: skew(-15deg); }
+
+
+/* Latest News */
+.latest-news {
+    padding: 50px 0; }
+    .latest-news .post-entry {
+      position: relative;
+      overflow: hidden; }
+      .latest-news .post-entry img {
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
+      .latest-news .post-entry:before {
+        content: "";
+        width: 0;
+        height: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+        background-color: #ee1e46;
+        z-index: 2; }
+      .latest-news .post-entry .caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        z-index: 1; }
+        .latest-news .post-entry .caption:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          z-index: -1;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          -webkit-transition: .3s all ease;
+          -o-transition: .3s all ease;
+          transition: .3s all ease;
+          background: rgba(0, 0, 0, 0.4); }
+        .latest-news .post-entry .caption .caption-inner {
+          position: absolute;
+          bottom: 30px;
+          left: 30px;
+          right: 30px; }
+          .latest-news .post-entry .caption .caption-inner h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff; }
+      .latest-news .post-entry .author .img {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 40px;
+        flex: 0 0 40px; }
+        .latest-news .post-entry .author .img img {
+          max-width: 100%;
+          border-radius: 50%; }
+      .latest-news .post-entry .author .text h4 {
+        color: #fff;
+        font-weight: 700; }
+      .latest-news .post-entry .author .text span {
+        color: rgba(255, 255, 255, 0.5); }
+      .latest-news .post-entry .author .text h4, .latest-news .post-entry .author .text span {
+        margin: 0;
+        line-height: 1;
+        font-size: 14px; }
+      .latest-news .post-entry:hover img {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+      .latest-news .post-entry:hover .caption:before {
+        background: rgba(0, 0, 0, 0.7); }
+      .latest-news .post-entry:hover:before {
+        width: 100%; }
+        
+
+        /* Heading site */
+        .title-section {
+            margin-bottom: 30px; }
+            .title-section .heading {
+              color: #000;
+              font-size: 20px;
+              position: relative;
+              padding-left: 30px; }
+              .title-section .heading:before {
+                position: absolute;
+                content: "";
+                width: 10px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                background: #ee1e46; }
+
+/* Section4  */
+.site-section {
+    background-color: #000;
+    color: white;
+    padding: 2.5em 0; }
+    @media (min-width: 768px) {
+      .site-section {
+        padding: 5em 0; } }
+    .site-section.site-section-sm {
+      padding: 4em 0; }
+  
+  .site-section-heading {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    font-size: 30px; }
+
+    .widget-next-match {
+        border: 1px solid rgba(255, 255, 255, 0.1); }
+
+        .widget-title {
+            padding: 16px 20px;
+            color: #fff;
+            background-color: #ee1e46; }
+            .widget-title h3 {
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              color: #fff;
+              font-weight: 700; }
+              .widget-body {
+                padding: 20px; }
+
+                
+.widget-vs {
+    width: 100%; }
+    .widget-vs img {
+      max-width: 120px; }
+    .widget-vs h3 {
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px; }
+    .widget-vs .vs > span {
+      display: inline-block;
+      font-size: 12px;
+      background: #ee1e46;
+      padding: 5px 20px;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: 700; }
+  
+  .widget-vs-contents {
+    padding-bottom: 0px; }
+    .widget-vs-contents h4 {
+      color: #ee1e46;
+      font-size: 16px;
+      font-weight: 700; }
+
+      .team-vs .team-1, .team-vs .team-2 {
+        padding: 30px; }
+      .team-vs .team-2 {
+        position: relative; }
+        .team-vs .team-2:before {
+          position: absolute;
+          background: #f6d743;
+          background: #ee1e46;
+          content: "";
+          left: -12%;
+          right: 0;
+          top: 0;
+          width: 200%;
+          height: 200%;
+          -webkit-transform: skew(-15deg);
+          -ms-transform: skew(-15deg);
+          transform: skew(-15deg); }
+
+          
+.widget-vs-contents {
+    padding-bottom: 0px; }
+    .widget-vs-contents h4 {
+      color: #ee1e46;
+      font-size: 16px;
+      font-weight: 700; }
+
+      .widget-next-match {
+        border: 1px solid rgba(255, 255, 255, 0.1); }
+
+        
+.custom-table {
+    margin-bottom: 0; }
+    .custom-table thead tr th {
+        padding: 24px 12px;
+      background: #ee1e46;
+      color: #fff;
+      border: none; }
+    .custom-table tbody tr td {
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      .custom-table tbody tr td strong {
+        font-weight: 400; }
+    .custom-table tbody tr:last-child td {
+      border: none; }
+
+/* Section 5 */
+
+.custom-media .img {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 150px;
+    flex: 0 0 150px; }
+    .custom-media .img img {
+      max-width: 100%;
+      border-radius: 7px; }
+  
+  .custom-media .text .meta {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 12px;
+    font-weight: 700; }
+  
+  .custom-media .text h3 {
+    font-size: 18px; }
+    .custom-media .text h3 a {
+      color: #fff; }
+      .custom-media .text h3 a:hover {
+        color: #ee1e46; }
+
+/* Footer */
+.footer-section {
+    padding: 70px 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    background: #1a1e25; }
+    .footer-section .widget h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 20px; }
+    .footer-section .widget .links li {
+      margin-bottom: 10px; }
+      .footer-section .widget .links li a {
+        color: rgba(255, 255, 255, 0.5); }
+        .footer-section .widget .links li a:hover {
+          color: #ee1e46; }
+
+
+/* Dashboard Layout */
+.ullist li {
+  color: black !important;
+}
+
+.ullist li:hover {
+  color: #008CFF !important;
+}
+
+.dropdwndetails:hover {
+  color: #008CFF !important;
+}
+
+
+
+
+/* Players List */

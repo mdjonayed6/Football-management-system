@@ -1,0 +1,17 @@
+
+
+Admin
+Coach
+Player
+Referee
+
+
+
+
+step 1: Open Xampp
+step 2: Open Client(Frontend) and Server(Backend) folder open in vscode
+step 3: Goto server(Backend) in vscode
+	-npx tsc --w
+	-npm start
+step 4: Goto client(Frontend) in vscode
+	-npm run dev
