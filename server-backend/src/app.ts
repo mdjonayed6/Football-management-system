@@ -38,9 +38,9 @@ app.get('/', (req: Request, res: Response) => {
     res.status(200).json({
         success: true,
         message: 'Welcome to Node.js Server',
-        author: 'Minhazul Abedin Munna',
-        github: 'https://github.com/smmunna',
-        linkedin: 'https://www.linkedin.com/in/minhazulabedinmunna/',
+        author: 'Md. Jonayed',
+        github: 'https://github.com/mdjonayed6',
+        linkedin: 'https://www.linkedin.com/in/md-jonayed/',
     })
 })
 
